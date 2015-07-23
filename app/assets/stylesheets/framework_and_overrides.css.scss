@@ -80,3 +80,32 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+
+body {
+  color: #ffffff;
+  background-color: rgb(31, 32, 36);
+
+  .container {
+    color: #ffffff;
+    background-color: rgb(31, 32, 36);
+  }
+}
+
+.two-phones {
+  margin-top: 50px;
+}
+
+.name-with-logo {
+  margin-top: 50px;
+}
+
+.pump {
+  margin-top: 50px;
+}
+
+h2.drivers_choose {
+  font-size: 22px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
