@@ -7,16 +7,172 @@
       = image_tag('pump.png', class: 'pump')
 
 .container
-  .row
+  .row.second_row
     .col-md-6
       = image_tag('great-app.png', class: 'great-app')
       %h2.drivers_choose Drivers choose Diesel Shark to better manage their routes, including find cheaper fuel, sort truck stops by amentities and/or fuel type.  Plan smarter & save with Diesel Shark.
     .col-md-6
       .row
         .col-md-6
-          = image_tag('app-store.png')
+          = image_tag('app-store.png', class: "app-store")
         .col-md-6
-          = image_tag('comming-soon.png')
+          = image_tag('comming-soon.png', class: "comming-soon")
       .row
         .col-md-12
           %h2.join_us Join us today for FREE
+
+.container
+  .row.myCarousel_1
+    .carousel.slide#myCarousel
+      %ol.carousel-indicators
+        %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
+
+
+      .carousel-inner
+        .active.item
+          .row.slider_1_top
+            .col-md-12
+              =image_tag("how_diesel_shark_works.png")
+              =image_tag("phone_v2.png")
+          .row.slider_1
+            .col-md-2
+              =image_tag("one_v2.png")
+            .col-md-5.slider_1_title
+              %p Plan your route
+            .col-md-5.slider_1_text
+              %p With just one tap, input your long-haul route
+        .item
+          .row.slider_1_top
+            .col-md-12
+            =image_tag("how_diesel_shark_works.png")
+            =image_tag("phone_v3.png")
+          .row.slider_1
+            .col-md-2
+              =image_tag("two_v3.png")
+            .col-md-5.slider_1_title
+              %p Filter options
+            .col-md-5.slider_1_text
+              %p Sort refueling options by amenities, fuel type, and/or price
+        .item
+          .row.slider_1_top
+            .col-md-12
+              =image_tag("how_diesel_shark_works.png")
+              =image_tag("phone_v4.png")
+          .row.slider_1
+            .col-md-2
+              =image_tag("three_v4.png")
+            .col-md-5.slider_1_title
+              %p Shark Route
+            .col-md-5.slider_1_text
+              %p Shark Route auto-calculates best fueling option(s)
+        .item
+          .row.slider_1_top
+            .col-md-12
+              =image_tag("how_diesel_shark_works.png")
+              =image_tag("phone_v5.png")
+          .row.slider_1
+            .col-md-2
+              =image_tag("four_v5.png")
+            .col-md-5.slider_1_title
+              %p Save
+            .col-md-5.slider_1_text
+              %p Average long-haul savings of over $20/route
+
+      %a.left.carousel-control{:href => "#myCarousel", "data-slide" => "prev"}
+        %span.glyphicon.glyphicon-chevron-left
+      %a.right.carousel-control{:href => "#myCarousel", "data-slide" => "next"}
+        %span.glyphicon.glyphicon-chevron-right
+
+.container.row_fourth
+  -# there should be background-image but it seems to not work with bootstrap properly
+  .row
+    .col-md-6
+      =image_tag("all_of_your_v6.png")
+    .col-md-6
+      =image_tag("partners_v6.png")
+      %p Includes thousands of locations throughout North America
+      =image_tag("logo.png")
+
+.container
+  .row.row_fifth
+    .col-md-8
+      =image_tag("tir_v7.png")
+    .col-md-4
+      =image_tag("real_time_v7.png")
+      =image_tag("download_v7.png")
+
+.container
+  .row.row_sixth
+    .row
+      .col-md-7
+        =image_tag("50_v8.png")
+        %p Over half of drivers routinely overpay at the pump.
+      .col-md-5
+    .row.row_sixth_2
+      .col-md-7
+        =image_tag("map_v8.png")
+      .col-md-5
+        =image_tag("with_diesel_v8.png")
+
+.container
+  .row.myCarousel_2
+    .col-md-3
+    .col-md-6
+      =image_tag("screen_out_only_v9.png")
+    .col-md-3
+    .carousel.slide#myCarousel_2
+      .carousel-inner
+        .active.item
+          .row
+            .col-md-3
+            .col-md-6
+              =image_tag("fotka_v9.png")
+              %p.par "I’ll never plan a new route again without using Diesel Shark first."
+              %p.sign — M. Jenkins, Ocala, FL
+            .col-md-3
+
+
+        .item
+          .row
+            .col-md-3
+            .col-md-6
+              =image_tag("fotka_v10.png")
+              %p.par “Works great! I travelled from the US to Canada and saved a ton on fuel!”
+              %p.sign — A. Hangeuppe
+            .col-md-3
+
+        .item
+          .row
+            .col-md-3
+            .col-md-6
+              =image_tag("fotka_v11.png")
+              %p.par “Been using to find best pump prices out there. Big 5 chains all in there”
+              %p.sign —  Bigrig K
+            .col-md-3
+
+
+      %a.left.carousel-control{:href => "#myCarousel_2", "data-slide" => "prev"}
+        %span.glyphicon.glyphicon-chevron-left
+      %a.right.carousel-control{:href => "#myCarousel_2", "data-slide" => "next"}
+        %span.glyphicon.glyphicon-chevron-right
+
+  .row.bottom_ad
+    .row
+      .col-md-6
+        =image_tag("app_store_v9.png")
+      .col-md-6
+        =image_tag("android_v9.png")
+    .row
+      .col-md-12
+        %p Join us today for FREE
+
+
+
+
+:javascript
+  $(function(){
+    $('.carousel').carousel();
+  });

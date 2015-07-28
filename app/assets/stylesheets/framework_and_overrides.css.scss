@@ -88,6 +88,9 @@ body {
   .container {
     color: #ffffff;
     background-color: rgb(31, 32, 36);
+    .second_row {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -108,4 +111,112 @@ h2.drivers_choose {
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
+}
+
+h2.join_us {
+  font-size: 18px;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.app-store {
+  margin-right: 0px;
+}
+
+.comming-soon {
+  margin-left: 0px;
+}
+
+.navigation_bar {
+  margin-bottom: 40px;
+  font-size: 21px;
+}
+
+.myCarousel_1 {
+
+  .slider_1_top {
+    background-color: #666666;
+    padding-bottom: 50px;
+  }
+
+  .slider_1 {
+    margin-top: auto;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .slider_1_title {
+    font-size: 44px;
+  }
+
+  .slider_1_text {
+    font-size: 36px;
+  }
+
+  .carousel-indicators li {
+    border-color: #000000;
+  }
+  .carousel-indicators .active {
+    background-color: #000000;
+  }
+}
+
+.row_fourth {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: aqua;
+  font-size: 40px;
+  text-align: center;
+  p {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.row_fifth {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.row_sixth {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #999999;
+  .row_sixth_2 {
+    padding-top: auto;
+    padding-bottom: 50px;
+  }
+  p {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.myCarousel_2 {
+  background-color: #007FFF;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .par{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+  .sign {
+    font-size: 32px;
+  }
+}
+
+.bottom_ad {
+  background-color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
