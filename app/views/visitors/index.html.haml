@@ -1,5 +1,5 @@
 .container
-  .row
+  .row.first_row
     .col-md-5
       = image_tag('two-phones.png', class: 'two-phones')
     .col-md-7
@@ -114,7 +114,7 @@
     .row.row_sixth_2
       .col-md-7
         =image_tag("map_v8.png")
-      .col-md-5
+      .col-md-5.with_diesel
         =image_tag("with_diesel_v8.png")
 
 .container
@@ -133,6 +133,15 @@
               %p.par "I’ll never plan a new route again without using Diesel Shark first."
               %p.sign — M. Jenkins, Ocala, FL
             .col-md-3
+          .row.car_2_footer
+            .col-md-6
+              =image_tag("app_store_v9.png", class: "app-store")
+            .col-md-6
+              =image_tag("android_v9.png", class: "comming-soon")
+          .row.car_2_footer
+            .col-md-12
+              %p.join Join us today for FREE
+
 
 
         .item
@@ -143,6 +152,15 @@
               %p.par “Works great! I travelled from the US to Canada and saved a ton on fuel!”
               %p.sign — A. Hangeuppe
             .col-md-3
+          .row.car_2_footer
+            .col-md-6
+              =image_tag("app_store_v9.png", class: "app-store")
+            .col-md-6
+              =image_tag("android_v9.png", class: "comming-soon")
+          .row.car_2_footer
+            .col-md-12
+              %p.join Join us today for FREE
+
 
         .item
           .row
@@ -152,6 +170,14 @@
               %p.par “Been using to find best pump prices out there. Big 5 chains all in there”
               %p.sign —  Bigrig K
             .col-md-3
+          .row.car_2_footer
+            .col-md-6
+              =image_tag("app_store_v9.png", class: "app-store")
+            .col-md-6
+              =image_tag("android_v9.png", class: "comming-soon")
+          .row.car_2_footer
+            .col-md-12
+              %p.join Join us today for FREE
 
 
       %a.left.carousel-control{:href => "#myCarousel_2", "data-slide" => "prev"}
@@ -159,17 +185,32 @@
       %a.right.carousel-control{:href => "#myCarousel_2", "data-slide" => "next"}
         %span.glyphicon.glyphicon-chevron-right
 
-  .row.bottom_ad
-    .row
-      .col-md-6
-        =image_tag("app_store_v9.png")
-      .col-md-6
-        =image_tag("android_v9.png")
-    .row
-      .col-md-12
-        %p Join us today for FREE
 
-
+.container
+  .row.row_seventh
+    .row.pictures
+      .col-md-4
+        =image_tag("follow_v12.2.png")
+      .col-md-4
+        =image_tag("logo_v12.png")
+      .col-md-4
+        =image_tag("download_v12.png")
+    .row.text_1
+      .col-md-1
+      .col-md-2
+        %p Terms of Use
+      .col-md-2
+        %p Privacy Policy
+      .col-md-2
+        %p Blog
+      .col-md-2
+        %p Support
+      .col-md-2
+        %p Contact Us
+      .col-md-1
+    .row.text_2
+      %p
+        %b Copyright &copy; 2015 | Diesel Shark, Inc. | All Rights Reserved
 
 
 :javascript

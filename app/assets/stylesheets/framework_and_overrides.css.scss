@@ -88,10 +88,25 @@ body {
   .container {
     color: #ffffff;
     background-color: rgb(31, 32, 36);
-    .second_row {
-      margin-top: 20px;
-    }
   }
+}
+
+.navigation_bar {
+  margin-bottom: 20px;
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+.navbar-right {
+  margin-top: 30px;
+}
+
+.first_row {
+  margin-top: 50px;
+}
+
+.second_row {
+  margin-top: 50px;
 }
 
 .two-phones {
@@ -128,11 +143,6 @@ h2.join_us {
   margin-left: 0px;
 }
 
-.navigation_bar {
-  margin-bottom: 40px;
-  font-size: 21px;
-}
-
 .myCarousel_1 {
 
   .slider_1_top {
@@ -166,9 +176,11 @@ h2.join_us {
 .row_fourth {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: aqua;
   font-size: 40px;
   text-align: center;
+  background-image: url(background_v7.png);
+  background-size: cover;
+
   p {
     padding-bottom: 50px;
     padding-top: 50px;
@@ -178,7 +190,7 @@ h2.join_us {
 .row_fifth {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .row_sixth {
@@ -186,10 +198,14 @@ h2.join_us {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #999999;
+  background-image: url(background_v8.2.png);
+  background-size: cover;
   .row_sixth_2 {
     padding-top: auto;
     padding-bottom: 50px;
+    .with_diesel {
+      margin-top: 100px;
+    }
   }
   p {
     padding-bottom: 50px;
@@ -201,7 +217,9 @@ h2.join_us {
   background-color: #007FFF;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  .carousel-inner {
+    padding-top: 50px;
+  }
   .par{
     padding-top: 50px;
     padding-bottom: 20px;
@@ -209,14 +227,44 @@ h2.join_us {
   }
   .sign {
     font-size: 32px;
+    font-style: italic;
+    padding-bottom: 30px;
+  }
+  .car_2_footer {
+    background-color: #ffffff;
+    // font-size: 22px;
+    color: black;
+    // text-align: center;
+    padding-top: 20px;
+    // padding-bottom: 50px;
+    .join {
+      font-size: 22px;
+      text-align: center;
+    }
   }
 }
 
-.bottom_ad {
+.row_seventh {
   background-color: #ffffff;
-  font-size: 22px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .pictures {
+    padding-top: 20px;
+    padding-bottom: 20px
+  }
+  .text_1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    font-size: 33px;
+    text-align: center;
+    border-bottom: thick solid grey;
+  }
+  .text_2 {
+    color: grey;
+    text-size: 21px;
+    text-align: center;
+    border-bottom: thick solid grey;
+  }
 }
+
