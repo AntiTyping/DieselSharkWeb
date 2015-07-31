@@ -145,6 +145,8 @@ h2.join_us {
 
 .myCarousel_1 {
 
+  background-color: #d3d3d3;
+
   .slider_1_top {
     background-color: #666666;
     padding-bottom: 50px;
@@ -171,6 +173,64 @@ h2.join_us {
   .carousel-indicators .active {
     background-color: #000000;
   }
+}
+
+.works-header {
+  background-color: #d3d3d3
+}
+
+.works-slide-image {
+  margin-bottom: 80px;;
+}
+
+.step {
+  height: 150px;
+  background-color: #ffffff;
+  color: #000000;
+
+  margin-top: auto;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  color: #000000;
+
+  .step-image {
+    height: 100%;
+    display: table;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .slider_1_title {
+    font-size: 30px;
+    font-weight: bold;
+    height: 100%;
+    display: table;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .slider_1_text {
+    font-size: 30px;
+    font-weight: 400;
+    height: 100%;
+    display: table;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+
+.step-2, .step-3, .step-4 {
+  display: none;
 }
 
 .row_fourth {

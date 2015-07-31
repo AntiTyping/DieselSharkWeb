@@ -22,69 +22,116 @@
           %h2.join_us Join us today for FREE
 
 .container
+  .row.works-header
+    .col-md-12
+      =image_tag("how_diesel_shark_works.png")
+
   .row.myCarousel_1
-    .carousel.slide#myCarousel
-      %ol.carousel-indicators
-        %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
+    .col-md-12
+      .carousel.slide#myCarousel
+        %ol.carousel-indicators
+          %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
+          %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
+          %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
+          %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
 
-
-      .carousel-inner
-        .active.item
-          .row.slider_1_top
-            .col-md-12
-              =image_tag("how_diesel_shark_works.png")
+        .carousel-inner
+          .active.item{data: {step: 'step-1'}}
+            .works-slide-image
               =image_tag("phone_v2.png")
-          .row.slider_1
-            .col-md-2
-              =image_tag("one_v2.png")
-            .col-md-5.slider_1_title
-              %p Plan your route
-            .col-md-5.slider_1_text
-              %p With just one tap, input your long-haul route
-        .item
-          .row.slider_1_top
-            .col-md-12
-            =image_tag("how_diesel_shark_works.png")
-            =image_tag("phone_v3.png")
-          .row.slider_1
-            .col-md-2
-              =image_tag("two_v3.png")
-            .col-md-5.slider_1_title
-              %p Filter options
-            .col-md-5.slider_1_text
-              %p Sort refueling options by amenities, fuel type, and/or price
-        .item
-          .row.slider_1_top
-            .col-md-12
-              =image_tag("how_diesel_shark_works.png")
+          .item{data: {step: 'step-2'}}
+            .works-slide-image
+              =image_tag("phone_v3.png")
+          .item{data: {step: 'step-3'}}
+            .works-slide-image
               =image_tag("phone_v4.png")
-          .row.slider_1
-            .col-md-2
-              =image_tag("three_v4.png")
-            .col-md-5.slider_1_title
-              %p Shark Route
-            .col-md-5.slider_1_text
-              %p Shark Route auto-calculates best fueling option(s)
-        .item
-          .row.slider_1_top
-            .col-md-12
-              =image_tag("how_diesel_shark_works.png")
+          .item{data: {step: 'step-4'}}
+            .works-slide-image
               =image_tag("phone_v5.png")
-          .row.slider_1
-            .col-md-2
-              =image_tag("four_v5.png")
-            .col-md-5.slider_1_title
-              %p Save
-            .col-md-5.slider_1_text
-              %p Average long-haul savings of over $20/route
 
-      %a.left.carousel-control{:href => "#myCarousel", "data-slide" => "prev"}
-        %span.glyphicon.glyphicon-chevron-left
-      %a.right.carousel-control{:href => "#myCarousel", "data-slide" => "next"}
-        %span.glyphicon.glyphicon-chevron-right
+        %a.left.carousel-control{:href => "#myCarousel", "data-slide" => "prev"}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{:href => "#myCarousel", "data-slide" => "next"}
+          %span.glyphicon.glyphicon-chevron-right
+  .row.step.step-1
+    .col-md-2.step-image
+      %p= image_tag("one_v2.png")
+    .col-md-3.slider_1_title
+      %p Plan your route
+    .col-md-7.slider_1_text
+      %p
+        With just one tap,
+        %br
+        input your long-haul route
+  .row.step.step-2
+    .col-md-2.step-image
+      %p=image_tag("two_v3.png")
+    .col-md-3.slider_1_title
+      %p
+        Filter options
+    .col-md-7.slider_1_text
+      %p
+        Sort refueling options by amenities,
+        %br
+        fuel type, and/or price
+  .row.step.step-3
+    .col-md-2.step-image
+      %p=image_tag("three_v4.png")
+    .col-md-3.slider_1_title
+      %p Shark Route
+    .col-md-7.slider_1_text
+      %p
+        Shark Route auto-calculates
+        %br
+        best fueling option(s)
+  .row.step.step-4
+    .col-md-2.step-image
+      %p=image_tag("four_v5.png")
+    .col-md-3.slider_1_title
+      %p Save
+    .col-md-7.slider_1_text
+      %p
+        Average long-haul savings
+        %br
+        of over $20/route
+      -#.item
+      -#  .row.slider_1_top
+      -#    .col-md-12
+      -#    =image_tag("how_diesel_shark_works.png")
+      -#    =image_tag("phone_v3.png")
+      -#  .row.slider_1
+      -#    .col-md-2
+      -#      =image_tag("two_v3.png")
+      -#    .col-md-5.slider_1_title
+      -#      %p Filter options
+      -#    .col-md-5.slider_1_text
+      -#      %p Sort refueling options by amenities, fuel type, and/or price
+      -#.item
+      -#  .row.slider_1_top
+      -#    .col-md-12
+      -#      =image_tag("how_diesel_shark_works.png")
+      -#      =image_tag("phone_v4.png")
+      -#  .row.slider_1
+      -#    .col-md-2
+      -#      =image_tag("three_v4.png")
+      -#    .col-md-5.slider_1_title
+      -#      %p Shark Route
+      -#    .col-md-5.slider_1_text
+      -#      %p Shark Route auto-calculates best fueling option(s)
+      -#.item
+      -#  .row.slider_1_top
+      -#    .col-md-12
+      -#      =image_tag("how_diesel_shark_works.png")
+      -#      =image_tag("phone_v5.png")
+      -#  .row.slider_1
+      -#    .col-md-2
+      -#      =image_tag("four_v5.png")
+      -#    .col-md-5.slider_1_title
+      -#      %p Save
+      -#    .col-md-5.slider_1_text
+      -#      %p Average long-haul savings of over $20/route
+
+
 
 .container.row_fourth
   -# there should be background-image but it seems to not work with bootstrap properly
@@ -134,7 +181,7 @@
   .row
     .carousel.testimonials-carousel.slide#myCarousel_2
       .carousel-inner
-        .active.item
+        %div.active
           .row
             .col-md-3
             .col-md-6
@@ -230,3 +277,11 @@
   $(function(){
     $('.carousel').carousel();
   });
+
+  $('#myCarousel').on('slide.bs.carousel', function (data) {
+    $('.step').hide();
+    $('.' + $(data.relatedTarget).data('step')).show();
+    console.log($(data.relatedTarget).data('step'));
+    //$('.step-1').hide();
+    //$('.step-2').show();
+  })
