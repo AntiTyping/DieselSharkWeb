@@ -123,6 +123,7 @@
     .col-md-6
       =image_tag("screen_out_only_v9.png")
     .col-md-3
+  .row
     .carousel.slide#myCarousel_2
       .carousel-inner
         .active.item
@@ -133,16 +134,6 @@
               %p.par "I’ll never plan a new route again without using Diesel Shark first."
               %p.sign — M. Jenkins, Ocala, FL
             .col-md-3
-          .row.car_2_footer
-            .col-md-6
-              =image_tag("app_store_v9.png", class: "app-store")
-            .col-md-6
-              =image_tag("android_v9.png", class: "comming-soon")
-          .row.car_2_footer
-            .col-md-12
-              %p.join Join us today for FREE
-
-
 
         .item
           .row
@@ -152,15 +143,6 @@
               %p.par “Works great! I travelled from the US to Canada and saved a ton on fuel!”
               %p.sign — A. Hangeuppe
             .col-md-3
-          .row.car_2_footer
-            .col-md-6
-              =image_tag("app_store_v9.png", class: "app-store")
-            .col-md-6
-              =image_tag("android_v9.png", class: "comming-soon")
-          .row.car_2_footer
-            .col-md-12
-              %p.join Join us today for FREE
-
 
         .item
           .row
@@ -170,20 +152,21 @@
               %p.par “Been using to find best pump prices out there. Big 5 chains all in there”
               %p.sign —  Bigrig K
             .col-md-3
-          .row.car_2_footer
-            .col-md-6
-              =image_tag("app_store_v9.png", class: "app-store")
-            .col-md-6
-              =image_tag("android_v9.png", class: "comming-soon")
-          .row.car_2_footer
-            .col-md-12
-              %p.join Join us today for FREE
-
 
       %a.left.carousel-control{:href => "#myCarousel_2", "data-slide" => "prev"}
         %span.glyphicon.glyphicon-chevron-left
       %a.right.carousel-control{:href => "#myCarousel_2", "data-slide" => "next"}
         %span.glyphicon.glyphicon-chevron-right
+
+  .row.testimonials-store-links
+    .col-md-12
+      = link_to 'http://apple.com' do
+        =image_tag("app_store_v9.png", class: "app-store")
+      = link_to 'http://google.com' do
+        =image_tag("android_v9.png", class: "comming-soon")
+  .row.testimonials-join-us
+    .col-md-12
+      %p.join Join us today for FREE
 
 
 .container
