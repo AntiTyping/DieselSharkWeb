@@ -121,36 +121,43 @@
   .row.myCarousel_2
     .col-md-3
     .col-md-6
-      =image_tag("screen_out_only_v9.png")
+      .testimonial-top-image
+        =image_tag("screen_out_only_v9.png")
     .col-md-3
   .row
-    .carousel.slide#myCarousel_2
+    .carousel.testimonials-carousel.slide#myCarousel_2
       .carousel-inner
         .active.item
           .row
             .col-md-3
             .col-md-6
-              =image_tag("fotka_v9.png")
-              %p.par "I’ll never plan a new route again without using Diesel Shark first."
-              %p.sign — M. Jenkins, Ocala, FL
+              .testimonial-image
+                =image_tag("fotka_v9.png")
+              .testimonial-text
+                %p.par "I’ll never plan a new route again without using Diesel Shark first."
+                %p.sign — M. Jenkins, Ocala, FL
             .col-md-3
 
         .item
           .row
             .col-md-3
             .col-md-6
-              =image_tag("fotka_v10.png")
-              %p.par “Works great! I travelled from the US to Canada and saved a ton on fuel!”
-              %p.sign — A. Hangeuppe
+              .testimonial-image
+                =image_tag("fotka_v10.png")
+              .testimonial-text
+                %p.par “Works great! I travelled from the US to Canada and saved a ton on fuel!”
+                %p.sign — A. Hangeuppe
             .col-md-3
 
         .item
           .row
             .col-md-3
             .col-md-6
-              =image_tag("fotka_v11.png")
-              %p.par “Been using to find best pump prices out there. Big 5 chains all in there”
-              %p.sign —  Bigrig K
+              .testimonial-image
+                =image_tag("fotka_v11.png")
+              .testimonial-text
+                %p.par “Been using to find best pump prices out there. Big 5 chains all in there”
+                %p.sign —  Bigrig K
             .col-md-3
 
       %a.left.carousel-control{:href => "#myCarousel_2", "data-slide" => "prev"}
