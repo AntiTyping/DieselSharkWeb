@@ -188,17 +188,32 @@
 
 .container
   .row.row_seventh
-    .row.pictures
+    .row.footer-pictures
       .col-md-4
-        =image_tag("follow_v12.2.png")
+        .footer-follow-us
+          =image_tag("follow_v12.2.png")
+        .footer-social-links
+          = link_to 'http://facebook.com' do
+            = image_tag('facebook.png')
+          = link_to 'http://twitter.com' do
+            = image_tag('twitter.png')
+          = link_to 'http://google.com' do
+            = image_tag('google-plus.png')
       .col-md-4
-        =image_tag("logo_v12.png")
+        .footer-logo
+          =image_tag("logo_v12.png")
       .col-md-4
-        =image_tag("download_v12.png")
-    .row.text_1
+        .footer-download
+          =image_tag("download_v12.png")
+        .footer-app-store-links
+          = link_to 'http://apple.com' do
+            = image_tag('apple-link.png')
+          = link_to 'http://google.com' do
+            = image_tag('google-link.png')
+    .row.footer-links
       .col-md-1
       .col-md-2
-        %p Terms of Use
+        = link_to 'Terms of Use', root_path
       .col-md-2
         %p Privacy Policy
       .col-md-2
@@ -208,9 +223,10 @@
       .col-md-2
         %p Contact Us
       .col-md-1
-    .row.text_2
-      %p
-        %b Copyright &copy; 2015 | Diesel Shark, Inc. | All Rights Reserved
+    .row
+      .col-md-12
+        .footer-copyright
+          Copyright &copy; 2015 | Diesel Shark, Inc. | All Rights Reserved
 
 
 :javascript
