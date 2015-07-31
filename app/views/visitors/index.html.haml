@@ -90,11 +90,15 @@
   -# there should be background-image but it seems to not work with bootstrap properly
   .row
     .col-md-6
-      =image_tag("all_of_your_v6.png")
+      .partners-all
+        =image_tag("all_of_your_v6.png")
     .col-md-6
-      =image_tag("partners_v6.png")
-      %p Includes thousands of locations throughout North America
-      =image_tag("logo.png")
+      .partners-logs
+        = image_tag("partners_v6.png")
+      .partners-includes-thousands
+        = image_tag('includes_thousands.png')
+      .partners-logo
+        = image_tag("logo.png")
 
 .container
   .row.row_fifth
@@ -102,19 +106,22 @@
       =image_tag("tir_v7.png")
     .col-md-4
       =image_tag("real_time_v7.png")
-      =image_tag("download_v7.png")
+      .plan-route-download
+        =image_tag("download_v7.png")
 
 .container
   .row.row_sixth
     .row
       .col-md-7
-        =image_tag("50_v8.png")
-        %p Over half of drivers routinely overpay at the pump.
+        .savings-50-percent
+          =image_tag("50_v8.png")
+        .savings-over-half
+          = image_tag('over_half.png')
       .col-md-5
     .row.row_sixth_2
       .col-md-7
         =image_tag("map_v8.png")
-      .col-md-5.with_diesel
+      .col-md-5.savings-with-diesel
         =image_tag("with_diesel_v8.png")
 
 .container
