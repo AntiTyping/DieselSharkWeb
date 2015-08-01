@@ -7,7 +7,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to image_tag("logo_header_v1.png"), root_path, class: 'navbar-brand'
+      = link_to image_tag("logo.png"), root_path, class: 'navbar-brand visible-sm'
+      = link_to image_tag("logo-small.png"), root_path, class: 'navbar-brand logo-small visible-xs'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         = render 'layouts/navigation_links'

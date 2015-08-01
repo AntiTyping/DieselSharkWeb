@@ -2,12 +2,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// make all images responsive by default
+
+.navbar-fixed-top {
+  border-bottom: 2px solid #919191;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
 img {
   @extend .img-responsive;
   margin: 0 auto;
   }
-// override for the 'Home' navigation link
+
 .navbar-brand {
   font-size: inherit;
   }
@@ -92,13 +103,65 @@ body {
 }
 
 .navigation_bar {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 21px;
   vertical-align: middle;
 }
 
 .navbar-right {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.navbar-brand.logo-small {
+  padding-top: 9px;
+}
+
+.container.mobile-app {
+  border-bottom: 2px solid #919191;
+}
+
+.mobile-app-two-phones {
+  margin-top: 120px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $screen-xs) {
+    margin-top: 10px;
+  }
+}
+
+.mobile-app-name {
+  margin-top: 70px;
+}
+
+.mobile-app-pump {
+  margin-bottom: 40px;
+}
+
+.great-app-text h2 {
+  margin-bottom: 50px;
+  color: #c1bfbf;
+  line-height: 28px;
+  padding: 0px 80px;
+}
+
+.mobile-app-apple-link .app-store {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.mobile-app-google-link .comming-soon {
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.mobile-app-join {
+  padding-top: 10px;
+}
+
+.mobile-app-join h2 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .first_row {
@@ -131,8 +194,7 @@ h2.drivers_choose {
 h2.join_us {
   font-size: 18px;
   text-align: center;
-  padding-left: 30%;
-  padding-right: 30%;
+  margin-bottom: 40px;
 }
 
 .app-store {
@@ -268,6 +330,10 @@ h2.join_us {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #FFFFFF;
+}
+
+.plan-your-route {
+  margin-bottom: 20px;
 }
 
 .plan-route-download {
